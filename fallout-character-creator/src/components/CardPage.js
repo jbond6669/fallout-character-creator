@@ -9,32 +9,59 @@ const CardPage = () => {
         <InfoCard
           frontContent={
             <>
-              <h2>Front Side 1</h2>
-              <p>This is the front of card 1.</p>
+              <h2>Overseer</h2>
+              <p> This job is the leader of assigned Vault.</p>
             </>
           }
           backContent={
             <>
-              <h2>Back Side 1</h2>
-              <p>This is the back of card 1.</p>
+              <h2>Requirements:</h2>
+              <p>Intelligence must be 8 or higher and Charisma must be 6 or higher</p>
             </>
           }
         />
         <InfoCard
           frontContent={
             <>
-              <h2>Front Side 2</h2>
-              <p>This is the front of card 2.</p>
+              <h2>Job Title:</h2>
+              <p>Scientist</p>
             </>
           }
           backContent={
             <>
-              <h2>Back Side 2</h2>
-              <p>This is the back of card 2.</p>
+              <h2>Requirements</h2>
+              <p>8 or higher Intelligence and willingness to do what is neccessary.</p>
             </>
           }
         />
-        {/* Add more InfoCard components as needed */}
+          <InfoCard
+          frontContent={
+            <>
+              <h2>Job Title:</h2>
+              <p>Security</p>
+            </>
+          }
+          backContent={
+            <>
+              <h2>Requirements</h2>
+              <p>5 or higher Strength.</p>
+            </>
+          }
+        />
+         <InfoCard
+          frontContent={
+            <>
+              <h2>Job Title:</h2>
+              <p>Lab Assistant</p>
+            </>
+          }
+          backContent={
+            <>
+              <h2>Requirements</h2>
+              <p>Willingness to do what it takes!</p>
+            </>
+          }
+        />
       </div>
     </div>
   );
