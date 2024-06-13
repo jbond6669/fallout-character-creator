@@ -2,7 +2,7 @@ import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
 import { Button, Typography, Container, Grid } from '@mui/material';
 import { CharacterContext } from '../CharacterContext';
-import backgroundImage from './images/vault-boy.jpg'; // Import your background image
+import backgroundImage from './images/vault-boy.jpg';
 
 function getRandomStatus(character) {
   const randomNum = Math.random();
@@ -20,10 +20,10 @@ function CharacterList() {
     backgroundSize: 'cover',
     backgroundRepeat: 'no-repeat',
     color: 'white',
-    padding: '20px', // Add padding for better readability
-    minHeight: '100vh', // Set minimum height to fill viewport
-    margin: 0, // Remove any default margin
-    overflowX: 'hidden', // Hide horizontal overflow
+    padding: '20px', 
+    minHeight: '100vh', 
+    margin: 0, 
+    overflowX: 'hidden', 
   };
 
   return (
@@ -45,6 +45,18 @@ function CharacterList() {
             <Typography>Agility: {character.agility}</Typography>
             <Typography>Luck: {character.luck}</Typography>
             <Typography>Status: {getRandomStatus(character)}</Typography>
+            <Button 
+              variant="contained" 
+              component={Link} 
+              to={`/edit/${index}`} 
+              style={{ 
+                backgroundColor: 'blue', 
+                color: 'white', 
+                marginTop: '10px' 
+              }}
+            >
+              Edit
+            </Button>
           </Grid>
         ))}
       </Grid>

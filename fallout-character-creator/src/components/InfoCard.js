@@ -11,10 +11,16 @@ const InfoCard = ({ frontContent, backContent }) => {
   return (
     <div className={`card ${isFlipped ? 'flipped' : ''}`} onClick={handleClick}>
       <div className="card-face card-front">
-        {frontContent}
+        <div className="card-content">
+          <h2>{frontContent.title}</h2>
+          <p>{frontContent.text}</p>
+        </div>
       </div>
       <div className="card-face card-back">
-        {backContent}
+        <div className="card-content">
+          <h2>{backContent.title}</h2>
+          <p>{backContent.text}</p>
+        </div>
       </div>
     </div>
   );

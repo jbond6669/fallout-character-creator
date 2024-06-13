@@ -32,7 +32,7 @@ function Home() {
           List of Vault Dwellers
         </Button>
         <Button variant="contained" color="primary" component={Link} to="/cards" style={{ backgroundColor: 'blue', color: 'white', margin: '0 10px' }}>
-          View Cards
+          Open Vault Postitions
         </Button>
       </Container>
     </div>

@@ -20,12 +20,14 @@
   }
   
   .card-front {
-    background-color: #9e9aaf;
+    background-color: gold;
+    text-align: center;
   }
   
   .card-back {
-    background-color: #f8f8f8;
+    background-color: gold;
     transform: rotateY(180deg);
+    text-align: center;
   }
   
   .card.flipped .card-front {
